@@ -13,8 +13,25 @@
 //          const a=1;
 //          return a;}
 //------------------------------------------------------------------
-const FilterDropdown = () => (
-  <div className="collection-sort">
+// const FilterDropdown = () => (
+ 
+// );
+
+// const SortDropdown = () => (
+  
+// );
+
+// const SortBar = () => (
+//   <div className="sort">
+//     <FilterDropdown />
+//     <SortDropdown />
+//   </div>
+// );
+
+const Header = () => (
+  <nav className="product-filter">
+    <h1>Jackets</h1>
+    <div className="collection-sort">
     <label>Filter by:</label>
     <select>
       <option value="/">All Jackets</option>
@@ -27,9 +44,7 @@ const FilterDropdown = () => (
       <option value="/">womens</option>
     </select>
   </div>
-);
 
-const SortDropdown = () => (
   <div className="collection-sort">
     <label>Sort by:</label>
     <select>
@@ -43,19 +58,8 @@ const SortDropdown = () => (
       <option value="/">Date, old to new</option>
     </select>
   </div>
-);
 
-const SortBar = () => (
-  <div className="sort">
-    <FilterDropdown />
-    <SortDropdown />
-  </div>
-);
 
-const Header = () => (
-  <nav className="product-filter">
-    <h1>Jackets</h1>
-    <SortBar />
   </nav>
 );
 
